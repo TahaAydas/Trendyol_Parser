@@ -1,9 +1,9 @@
 const request = require("request-promise");
 const cheerio = require("cheerio");
-const value = "saat";
+const value = "telefon";
 const defaultSite = "https://www.trendyol.com";
 request(
-  "https://www.trendyol.com/sr?q=saat&qt=saat&st=saat&os=1&pi=1",
+  "https://www.trendyol.com/sr?q=telefon&qt=telefon&st=telefon&os=1&pi=1",
   (error, response, html) => {
     if (!error && response.statusCode == 200) {
       const $ = cheerio.load(html);
